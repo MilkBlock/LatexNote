@@ -1,0 +1,47 @@
+\documentclass[utf8]{ctexart}
+\usepackage{geometry}
+\geometry{a4paper,scale=0.8}
+\author{Mineral}
+\title{Vim微操}
+\date {\today}
+\begin{document}
+		\maketitle
+		\section{简单文本操作}
+		\subsection{将下一行剪切到当前行尾部}
+		\par 直接使用 Shift + j
+		\par 可视为大写字母 J
+		\par J兄这行我不想留成单独一行，请把下一行捞过来，谢谢		
+		\subsection{实现快速光标跳跃}
+		\begin{enumerate}
+				\item Shift+H Shift+L 实现使光标跳转到上部（下部)
+				\item Shift+Up Shift+Down 小键盘 实现快速翻页
+				\item 勤奋使用 / 查询跳转	
+		\end{enumerate}
+		\subsection{需要用一段文本替换另一段}
+		\begin{enumerate}
+				\item vw+选中需要复制的文本
+				\item y进行复制
+				\item vw+复制需要替换的文本
+				\item p进行粘贴			
+		\end{enumerate}
+		\subsection{需要将某一行文字重复多行}
+		\begin{enumerate}
+				\item Y复制当前行
+				\item (N)p复制任意次
+		\end{enumerate}
+		\subsection{使用某文本替换单行}
+		\par \Large \$Vp
+		\subsection{修改一整行}
+		\Large 	cc
+		
+		
+		\section{文件操作}
+		\subsection{修改当前文件的文件名}
+        \Large 			:saveas
+		
+			
+		
+		
+		
+		
+\end{document}

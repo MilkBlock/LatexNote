@@ -1,11 +1,11 @@
 # Fdb version 3
-["xdvipdfmx"] 1640963766 "Github.xdv" "Github.pdf" "Github" 1640963767
-  "Github.xdv" 1640963766 15400 6251487504da1422e9b12bc0b5b4d802 "xelatex"
+["xdvipdfmx"] 1641014329 "LaTexCommand.xdv" "LaTexCommand.pdf" "LaTexCommand" 1641014330
+  "LaTexCommand.xdv" 1641014329 5396 7534bf295f01ad0d1a161776bb1f780d "xelatex"
   (generated)
-  "Github.pdf"
-["xelatex"] 1640963765 "Github.tex" "Github.xdv" "Github" 1640963767
-  "Github.aux" 1640963766 712 34006e03bae68bebb702df5046abe982 "xelatex"
-  "Github.tex" 1640951530 2183 4140c3f309f3f464fa612a739df4f598 ""
+  "LaTexCommand.pdf"
+["xelatex"] 1641014327 "LaTexCommand.tex" "LaTexCommand.xdv" "LaTexCommand" 1641014330
+  "LaTexCommand.aux" 1641014329 318 19d2489153206fc17faf47e1ab57280e "xelatex"
+  "LaTexCommand.tex" 1641014325 811 3f70c328858adfa13efdb8649ed41d87 ""
   "c:/Windows/Fonts/msyh.ttc" 1622894706 19647736 ff2e53a6131130a07589812ea5b5b0d0 ""
   "d:/Software/TexLive/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map" 1614782970 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "d:/Software/TexLive/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm" 1614782620 1524 4414a8315f39513458b80dfc63bff03a ""
@@ -58,6 +58,6 @@
   "d:/Software/TexLive/texlive/2020/texmf-var/web2c/xetex/xelatex.fmt" 1614784677 4769671 866408f83aa18d09e76c3c0e63dc3432 ""
   "d:/Software/TexLive/texlive/2020/texmf.cnf" 1614784519 673 4ae7b2f49cee444c5343a45b5d0f169c ""
   (generated)
-  "Github.log"
-  "Github.xdv"
-  "Github.aux"
+  "LaTexCommand.aux"
+  "LaTexCommand.log"
+  "LaTexCommand.xdv"

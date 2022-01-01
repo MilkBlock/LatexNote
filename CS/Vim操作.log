@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2021.3.3)  31 DEC 2021 23:16
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2021.3.3)  1 JAN 2022 00:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**Github.tex
-(./Github.tex
+**Vim操作.tex
+(./Vim操作.tex
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-03-06> (d:/Software/TexLive/texlive/2020/texmf-dist/tex/latex/ctex/ctexart.cls (d:/Software/TexLive/texlive/2020/texmf-dist/tex/latex/l3kernel/expl3.sty
 Package: expl3 2020-03-06 L3 programming layer (loader) 
@@ -251,8 +251,8 @@ Package: iftex 2020/03/06 v1.0d TeX engine tests
 LaTeX Warning: Unused global option(s):
     [utf8].
 
-(./Github.aux)
-\openout1 = `Github.aux'.
+(./Vim操作.aux)
+\openout1 = `Vim操作.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
@@ -372,17 +372,14 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 8.
 [1
 
-]
-LaTeX Font Info:    Font shape `TU/SimSun(0)/m/sl' in size <10.53937> not available
-(Font)              Font shape `TU/SimSun(0)/m/it' tried instead on input line 66.
- [2] [3] (./Github.aux) ) 
+] (./Vim操作.aux) ) 
 Here is how much of TeX's memory you used:
- 7488 strings out of 479418
- 216033 string characters out of 5880626
- 494519 words of memory out of 5000000
- 24933 multiletter control sequences out of 15000+600000
- 535380 words of font info for 59 fonts, out of 8000000 for 9000
+ 7484 strings out of 479418
+ 215885 string characters out of 5880626
+ 493518 words of memory out of 5000000
+ 24931 multiletter control sequences out of 15000+600000
+ 535372 words of font info for 58 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 56i,6n,68p,367b,297s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,6n,68p,366b,255s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Github.xdv (3 pages, 15400 bytes).
+Output written on Vim操作.xdv (1 page, 6300 bytes).

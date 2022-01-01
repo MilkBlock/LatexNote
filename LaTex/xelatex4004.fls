@@ -1,0 +1,4 @@
+PWD D:/Document/GitHub/LatexNote/LaTex
+INPUT d:/Software/TexLive/texlive/2020/texmf.cnf
+INPUT d:/Software/TexLive/texlive/2020/texmf-dist/web2c/texmf.cnf
+INPUT d:/Software/TexLive/texlive/2020/texmf-var/web2c/xetex/xelatex.fmt
