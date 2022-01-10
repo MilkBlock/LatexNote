@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2021.3.3)  10 JAN 2022 15:20
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2021.3.3)  10 JAN 2022 11:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**LaTexCommand.tex
-(./LaTexCommand.tex
+**WebsiteMap.tex
+(./WebsiteMap.tex
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-03-06> (d:/Software/TexLive/texlive/2020/texmf-dist/tex/latex/ctex/ctexart.cls (d:/Software/TexLive/texlive/2020/texmf-dist/tex/latex/l3kernel/expl3.sty
 Package: expl3 2020-03-06 L3 programming layer (loader) 
@@ -251,8 +251,8 @@ Package: iftex 2020/03/06 v1.0d TeX engine tests
 LaTeX Warning: Unused global option(s):
     [utf8].
 
-(./LaTexCommand.aux)
-\openout1 = `LaTexCommand.aux'.
+(./WebsiteMap.aux)
+\openout1 = `WebsiteMap.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
@@ -370,48 +370,16 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 9.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 9.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.53937> on input line 35.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 35.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 35.
 [1
 
-]
-
-Package fontspec Info: Could not resolve font "FangSong/BI" (it probably
-(fontspec)             doesn't exist).
-
-
-Package fontspec Info: Could not resolve font "FangSong/B" (it probably
-(fontspec)             doesn't exist).
-
-
-Package fontspec Info: Could not resolve font "FangSong/I" (it probably
-(fontspec)             doesn't exist).
-
-
-Package fontspec Info: Font family 'FangSong(0)' created for font 'FangSong'
-(fontspec)             with options [Script={CJK}].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->"FangSong/OT:script=hani;language=dflt;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
-
-LaTeX Font Info:    Font shape `TU/SimSun(0)/m/sl' in size <10.53937> not available
-(Font)              Font shape `TU/SimSun(0)/m/it' tried instead on input line 65.
- [2] (./LaTexCommand.aux) ) 
+] (./WebsiteMap.aux) ) 
 Here is how much of TeX's memory you used:
- 7526 strings out of 479418
- 216994 string characters out of 5880626
- 492525 words of memory out of 5000000
- 24953 multiletter control sequences out of 15000+600000
- 536376 words of font info for 72 fonts, out of 8000000 for 9000
+ 7453 strings out of 479418
+ 214191 string characters out of 5880626
+ 490523 words of memory out of 5000000
+ 24903 multiletter control sequences out of 15000+600000
+ 535340 words of font info for 54 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 56i,6n,68p,373b,452s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,6n,68p,371b,255s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on LaTexCommand.xdv (2 pages, 8612 bytes).
+Output written on WebsiteMap.xdv (1 page, 3760 bytes).

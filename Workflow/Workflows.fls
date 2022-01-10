@@ -1,9 +1,9 @@
-PWD D:/Document/GitHub/LatexNote/LaTex
+PWD D:/Document/GitHub/LatexNote/Workflow
 INPUT d:/Software/TexLive/texlive/2020/texmf.cnf
 INPUT d:/Software/TexLive/texlive/2020/texmf-dist/web2c/texmf.cnf
 INPUT d:/Software/TexLive/texlive/2020/texmf-var/web2c/xetex/xelatex.fmt
-INPUT LaTexCommand.tex
-OUTPUT LaTexCommand.log
+INPUT Workflows.tex
+OUTPUT Workflows.log
 INPUT d:/Software/TexLive/texlive/2020/texmf-dist/tex/latex/ctex/ctexart.cls
 INPUT d:/Software/TexLive/texlive/2020/texmf-dist/tex/latex/ctex/ctexart.cls
 INPUT d:/Software/TexLive/texlive/2020/texmf-dist/tex/latex/l3kernel/expl3.sty
@@ -80,9 +80,9 @@ INPUT d:/Software/TexLive/texlive/2020/texmf-dist/tex/generic/iftex/ifvtex.sty
 INPUT d:/Software/TexLive/texlive/2020/texmf-dist/tex/generic/iftex/ifvtex.sty
 INPUT d:/Software/TexLive/texlive/2020/texmf-dist/tex/generic/iftex/iftex.sty
 INPUT d:/Software/TexLive/texlive/2020/texmf-dist/tex/generic/iftex/iftex.sty
-INPUT LaTexCommand.aux
-INPUT LaTexCommand.aux
-OUTPUT LaTexCommand.aux
+INPUT Workflows.aux
+INPUT Workflows.aux
+OUTPUT Workflows.aux
 INPUT d:/Software/TexLive/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
 INPUT d:/Software/TexLive/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
 INPUT d:/Software/TexLive/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
@@ -92,8 +92,5 @@ INPUT d:/Software/TexLive/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
 INPUT d:/Software/TexLive/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT d:/Software/TexLive/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
 INPUT d:/Software/TexLive/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
-INPUT d:/Software/TexLive/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
-INPUT d:/Software/TexLive/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
-INPUT d:/Software/TexLive/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
-OUTPUT LaTexCommand.xdv
-INPUT LaTexCommand.aux
+OUTPUT Workflows.xdv
+INPUT Workflows.aux

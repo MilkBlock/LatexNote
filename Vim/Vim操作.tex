@@ -1,7 +1,7 @@
 \documentclass[utf8]{ctexart}
 \usepackage{geometry}
 \geometry{a4paper,scale=0.8}
-\author{Mineral}
+\author{Mi
 \title{Vim微操}
 \date {\today}
 \begin{document}
@@ -11,7 +11,7 @@
 		\par 直接使用 Shift + j
 		\par 可视为大写字母 J
 		\par J兄这行我不想留成单独一行，请把下一行捞过来，谢谢		
-		\subsection{实现快速光标跳跃}
+		\subsection{实现快速光标跳跃(BANNED)}
 		\begin{enumerate}
 				\item Shift+H Shift+L 实现使光标跳转到上部（下部)
 				\item Shift+Up Shift+Down 小键盘 实现快速翻页
@@ -29,6 +29,12 @@
 				\item Y复制当前行
 				\item (N)p复制任意次
 		\end{enumerate}
+		\subsection{返回上次跳转位置}
+		\begin{enumerate}
+				\item Ctrl-o return
+				\item Ctrl-i re-return	
+		\end{enumerate}
+		
 		\subsection{使用某文本替换单行}
 		\par \Large \$Vp
 		\subsection{修改一整行}

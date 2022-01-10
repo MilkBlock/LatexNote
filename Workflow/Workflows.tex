@@ -1,0 +1,29 @@
+\documentclass[utf8]{ctexart}
+\usepackage{geometry}
+\usepackage{ulem}
+\geometry{a4paper,scale=0.8}
+\author{Mineral}
+\title{Workflows}
+\date {\today}
+\begin{document}
+		\maketitle
+		\section{Publish Passages written by Latex to Zhihu}
+		\subsection{Tookit}
+		\begin{itemize}
+				\item Vim with LateX Extentions
+				\item Pandoc
+				\item Vscode with Zhihu Extention
+		\end{itemize}
+		\subsection{Details}
+		\begin{enumerate}
+				\item Edit your tex file 
+				\item Translate it into md by 
+				\begin{verbatim}
+				pandoc -o targe.md source.tex
+				\end{verbatim} 
+				\item Publish it by vscode.
+		\end{enumerate}
+		
+		
+		
+\end{document}

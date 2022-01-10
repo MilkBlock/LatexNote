@@ -1,5 +1,6 @@
 \documentclass[utf8]{ctexart}
 \usepackage{geometry}
+\usepackage{ulem}
 \geometry{a4paper,scale=0.8}
 \author{Mineral}
 \title{LaTex常用命令}
@@ -28,16 +29,37 @@
 	    \par \LARGE DEMO
 	    \par \Large On SALE	
 	    \par \huge Hello LaTex
+		\normalsize
 		\section{特殊符号}
 		\subsection{删除线等}
-		\par 首先加入 \backlash usepackage{ulem}
+		\par 首先加入 $\backslash$ usepackage{ulem}
 		\begin{enumerate}
-				\item \backlash sout{文字} 删除线
-				\item \backlash uwave{文字} 波浪线	
-				\item \backlash xout{文字} 斜删除线
-				\item \backlash uuline{文字} 双下划线		
+				\item $\backslash$ sout{文字} 删除线
+				\item $\backslash$ uwave{文字} 波浪线	
+				\item $\backslash$ xout{文字} 斜删除线
+				\item $\backslash$ uuline{文字} 双下划线		
 		\end{enumerate}
-		
+		\subsection{代码字体}
+		\noindent	 
+		使用verbatim 环境 
 
+		\begin{verbatim}
+		System.exit(0);
+				
+		\end{verbatim}
+		\section{Math Expression}
+		\begin{itemize}
+				\item $\times $ xx
+				\item $\ldots$ \ldots
+				\item $\cdot $ **
+				\item $\|A\| $ norm
+				\item	$\delta \Delta \phi \varphi$
+				\item 
+					
+						
+
+
+
+		\end{itemize}
 		
 \end{document}
