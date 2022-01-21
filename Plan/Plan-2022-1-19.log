@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2021.3.3)  19 JAN 2022 21:11
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2021.3.3)  20 JAN 2022 22:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -371,22 +371,22 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 9.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <15.05624> on input line 27.
+(Font)              <15.05624> on input line 28.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9.03374> on input line 27.
+(Font)              <9.03374> on input line 28.
 [1
 
 ]
 LaTeX Font Info:    Font shape `TU/SimSun(0)/m/sl' in size <10.53937> not available
-(Font)              Font shape `TU/SimSun(0)/m/it' tried instead on input line 57.
+(Font)              Font shape `TU/SimSun(0)/m/it' tried instead on input line 58.
  [2] (./Plan-2022-1-19.aux) ) 
 Here is how much of TeX's memory you used:
- 7558 strings out of 479418
- 219970 string characters out of 5880626
- 494527 words of memory out of 5000000
- 24997 multiletter control sequences out of 15000+600000
+ 7536 strings out of 479418
+ 218588 string characters out of 5880626
+ 493527 words of memory out of 5000000
+ 24975 multiletter control sequences out of 15000+600000
  537213 words of font info for 66 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 56i,6n,68p,375b,298s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,6n,68p,375b,335s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Plan-2022-1-19.xdv (2 pages, 12132 bytes).
+Output written on Plan-2022-1-19.xdv (2 pages, 12604 bytes).
