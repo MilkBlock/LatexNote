@@ -1,0 +1,61 @@
+\documentclass[utf8]{ctexart}
+\usepackage{geometry}
+\usepackage{ulem}
+\geometry{a4paper,scale=0.8}
+\author{Mineral}
+\title{LaTex常用命令}
+\date {\today}
+\begin{document}
+		\maketitle
+	    \section{文字}
+	    \subsection{文字全局大小}
+	    \par documentclass[12pt]{article}	
+		\par 修改开头
+		\subsection{文字局部大小}
+		\begin{enumerate}
+				\item tiny
+				\item scriptsize
+				\item footnotesize
+				\item small
+				\item normalsize
+				\item large
+				\item Large
+				\item LARGE
+				\item huge
+				\item Huge									
+		\end{enumerate}
+		\par 这个大写字母区分层级的操作下饭！
+		\par 注意局部模式是相比于全局字体的基础上变大变小。
+	    \par \LARGE DEMO
+	    \par \Large On SALE	
+	    \par \huge Hello LaTex
+		\normalsize
+		\section{特殊符号}
+		\subsection{删除线等}
+		\par 首先加入 $\backslash$ usepackage{ulem}
+		\begin{enumerate}
+				\item $\backslash$ sout{文字} 删除线
+				\item $\backslash$ uwave{文字} 波浪线	
+				\item $\backslash$ xout{文字} 斜删除线
+				\item $\backslash$ uuline{文字} 双下划线		
+		\end{enumerate}
+		\subsection{代码字体}
+		\noindent	 
+		使用verbatim 环境 
+
+		\begin{verbatim}
+		System.exit(0);
+				
+		\end{verbatim}
+		\section{Math Expression}
+		\begin{itemize}
+				\item $\times $ xx
+				\item $\ldots$ \ldots
+				\item $\cdot $ **
+				\item $\|A\| $ norm
+				\item	$\delta \Delta \phi \varphi$
+				\item $\to $
+
+		\end{itemize}
+		
+\end{document}

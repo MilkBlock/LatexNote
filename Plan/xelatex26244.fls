@@ -1,0 +1,5 @@
+PWD D:/Document/GitHub/LatexNote/Plan
+INPUT d:/Software/TexLive/texlive/2020/texmf.cnf
+INPUT d:/Software/TexLive/texlive/2020/texmf-dist/web2c/texmf.cnf
+INPUT d:/Software/TexLive/texlive/2020/texmf-var/web2c/xetex/xelatex.fmt
+INPUT Plan-2022-1-19.tex

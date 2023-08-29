@@ -1,0 +1,91 @@
+\documentclass[utf8]{ctexart}
+\usepackage{geometry}
+\geometry{a4paper,scale=0.8}
+\author{Mi
+\title{Vim微操}
+\date {\today}
+\begin{document}
+		\maketitle
+		\section{简单文本操作}
+		\subsection{将下一行剪切到当前行尾部}
+		\par 直接使用 Shift + j
+		\par 可视为大写字母 J
+		\par J兄这行我不想留成单独一行，请把下一行捞过来，谢谢		
+		\subsection{实现快速光标跳跃(BANNED)}
+		\begin{enumerate}
+				\item Shift+H Shift+L 实现使光标跳转到上部（下部)
+				\item Shift+Up Shift+Down 小键盘 实现快速翻页
+				\item 勤奋使用 / 查询跳转	
+		\end{enumerate}
+		\subsection{需要用一段文本替换另一段}
+		\begin{enumerate}
+				\item vw+选中需要复制的文本
+				\item y进行复制
+				\item vw+复制需要替换的文本
+				\item p进行粘贴			
+		\end{enumerate}
+		\subsection{需要将某一行文字重复多行}
+		\begin{enumerate}
+				\item Y复制当前行
+				\item (N)p复制任意次
+		\end{enumerate}
+		\subsection{返回上次跳转位置}
+		\begin{enumerate}
+				\item Ctrl-o return
+				\item Ctrl-i re-return	
+		\end{enumerate}
+		
+		\subsection{使用某文本替换单行}
+		\par \Large \$Vp
+		\subsection{修改一整行}
+		\Large 	cc
+		\subsection{整行缩进}
+		\Large << >> or  ==
+		
+		
+		\section{文件操作}
+		\subsection{修改当前文件的文件名}
+        \Large 			:saveas
+		
+		\section{Vimscript}
+		from w3cshcool
+
+		\subsection{基础命令}
+		\begin{itemize}
+				\item echo 简单打印
+				\item  " 注释
+		\end{itemize}
+		\subsection{常用选项}
+		\begin{itemize}
+				\item wrap
+				\item shiftround
+				\item matchtime
+				\item number
+				\item 				
+		\end{itemize}
+		
+
+		\subsection{逻辑和赋值}
+
+		\begin{itemize}
+				\item set number 打开
+			\par set nonumber 关闭 作为布尔选项
+			\par set number!    取反	
+			\par set number? 返回变量值
+				\item set number width=10 值选项
+				\item set number numberwidth=6 一次赋值多个选项	
+				\item 
+				
+
+		\end{itemize}
+				
+		
+		
+		
+		
+			
+		
+		
+		
+		
+\end{document}
