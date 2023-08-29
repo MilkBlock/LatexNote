@@ -1,0 +1,103 @@
+\ifx\allfiles\undefined
+\input{../config/config}
+\begin{document}
+% \input{../config/cover}
+\else
+\fi
+
+\chapter{演示}
+\section{导数的概念}
+
+\begin{defn}
+设函数$y=f(x)$在点$x_0$的某个邻域内有定义，当自变量$x$在$x_0$处取得增量$\Delta{x}$（点$x_0+\Delta{x}$在该邻域内），因变量取得增量
+\[ \Delta{y}=f(x_0+\Delta{x})-f(x_0) \]
+如果$\Delta{y}$与$\Delta{x}$之比当$\Delta{x}\to 0$时的极限存在，那么称函数$y=f(x)$在点$x_0$处可导，并称这个极限为函数$y=f(x)$在$x_0$处的导数，记为$f'(x)$，即
+\[
+f'(x) = \lim_{\Delta{x}\to0}\frac{\Delta{y}}{\Delta{x}} = \lim_{\Delta{x}\to 0}\frac{f(x_0+\Delta{x})-f(x_0)}{\Delta{x}}
+\]
+或记为$y'|_{x=x_0},\;\dfrac{\d y}{\d x}\Big|_{x = x_0},\;\dfrac{\d f(x)}{\d x}\Big|_{x=x_0},\;f'(x) = \lim\limits_{x\to x_0}\dfrac{f(x)-f(x_0)}{x-x_0}$.
+\end{defn}
+
+\begin{lemma}[瞎编的引理]
+好好学习 => 天天向上 
+\[
+		\left(\frac{\partial}{\partial \mathbf{{r}_{C}}} \left(\left(x\right)\mathbf{\hat{i}_{C}} + \left(y\right)\mathbf{\hat{j}_{C}} + \left(z\right)\mathbf{\hat{k}_{C}}\right)\right)\mathbf{\hat{i}_{C}} + \left(\frac{\frac{\partial}{\partial \mathbf{{\\\theta}_{C}}} \left(\left(x\right)\mathbf{\hat{i}_{C}} + \left(y\right)\mathbf{\hat{j}_{C}} + \left(z\right)\mathbf{\hat{k}_{C}}\right)}{\mathbf{{r}_{C}}}\right)\mathbf{\hat{j}_{C}} + \left(\frac{\partial}{\partial \mathbf{{z}_{C}}} \left(\left(x\right)\mathbf{\hat{i}_{C}} + \left(y\right)\mathbf{\hat{j}_{C}} + \left(z\right)\mathbf{\hat{k}_{C}}\right)\right)\mathbf{\hat{k}_{C}}
+.\]  
+\end{lemma}
+
+
+\begin{thm}[离散函数的梯度的散度]
+梯度的散度，在数学中的表达是Laplace 算子，对于离散函数$ f $，我们有
+\begin{align*}
+		\nabla^2 f &= \frac{f(x+\mathrm{d}x,y) + f(x-\mathrm{d}x,y) + f(x,y+\mathrm{d}y)+ f(x,y-\mathrm{d}y)  - 4f(x,y) }{\mathrm{d}x^2 }  \\
+.\end{align*}
+		因为根据泰勒展开我们有
+	\begin{align*}
+			f(x+\mathrm{d}x ,y) &=  f(x,y) + f'(x,y)\mathrm{d}x + f''(x,y) \mathrm{d}x^2 +\ldots\\
+			f(x-\mathrm{d}x ,y) &=  f(x,y) + f'(x,y)\mathrm{d}x + f''(x,y) \mathrm{d}x^2 +\ldots\\
+	.\end{align*}	
+	两者相加即可得到
+\end{thm}
+
+\begin{corollary}[瞎编的推论]
+你小子没点赞.
+\end{corollary}
+
+\begin{criterion}[夹逼准则]
+$a(x) < b(x) < c(x)$,且$\lim{a} = \lim{c} = A$，那么$\lim{b} = A$
+\end{criterion}
+
+\begin{proposition}
+差若毫厘，谬以千里.
+\end{proposition}
+
+\begin{example}
+求 $ 1+2 = ?$
+\end{example}
+
+\begin{solution}
+$\displaystyle 1 + 2 = (1+2)\int_0^1 x^2 \d x + (1+2)\int_0^1 x^2 \d x + (1+2)\int_0^1 x^2 \d x$
+\end{solution}
+
+\begin{rmk}
+我不会
+\end{rmk}
+
+\begin{proof}
+$1 + 2 = 2 + 1$.
+\end{proof}
+
+\section{偏导数}
+\subsection{偏导数的定义及其计算法}
+\begin{defn}
+设函数$z=f(x,\,y)$在点$(x_0,\,y_0)$的某一邻域内有定义，当$y$固定在$y_0$而$x$在$x_0$处有增量$\Delta x$时，相应的函数有增量$f(x_0 + \Delta{x},\,y_0) - f(x_0,\,y_0)$，如果
+\[
+\lim_{\Delta{x} \to 0}\frac{f(x_0 + \Delta{x},\,y_0)-f(x_0,\,y_0)}{\Delta{x}}
+\]
+存在，那么称此极限为函数$z=f(x,\,y)$在点$(x_0,\,y_0)$处对$x$的偏导数（一点处的偏导），记作：
+\[
+\frac{\partial z}{\partial x}\Big| _{x=x_0,\, y=y_0} ,\enspace \frac{\partial f}{\partial x}\Big| _{x=x_0,\, y=y_0} ,\enspace f_x(x_0,y_0),\enskip {f_x}'(x_0,y_0)
+\]
+类似地，函数$z=f(x,\,y)$在点$(x_0,\,y_0)$处对$y$的偏导数定义为
+\[
+\lim_{\Delta{y} \to 0}\frac{f(x_0,\,y_0+\Delta{y})-f(x_0,\,y_0)}{\Delta{y}}
+\]
+记作同上，定义可推广到$n$元函数.
+\end{defn}
+
+\begin{example}
+求$z = x^2\sin{2y}$的偏导数.
+\end{example}
+\begin{solution}
+易得$\dfrac{\partial{z}}{\partial{x}} = 2x\sin{2y}+x^2(\sin{2y})' = 2x\sin{2y}$，$\dfrac{\partial{z}}{\partial{y}} = 2x^2\cos{2y}$.
+\end{solution}
+
+\myspace{1}
+
+\begin{center}
+{\LARGE 你小子记得点赞！}
+\end{center}
+
+\ifx\allfiles\undefined
+\end{document}
+\fi

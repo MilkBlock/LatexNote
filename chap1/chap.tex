@@ -1,0 +1,101 @@
+\ifx\allfiles\undefined
+\input{../config/config}
+\begin{document}
+\chapter{2023暑假图形学与数学笔记}
+\section{}
+% \input{../config/cover} % 单独编译时，其实不用编译封面目录之类的，如需要不注释这句即可
+\else
+\fi
+%  ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ 正文部分
+
+\begin{thm}[离散函数的梯度的散度的计算方式]
+梯度的散度，在数学中的表达是Laplace 算子，对于离散函数$ f $，我们有
+\begin{align*}
+\nabla^2 f &= \frac{f(x+\mathrm{d}x,y) + f(x-\mathrm{d}x,y) + f(x,y+\mathrm{d}y)+ f(x,y-\mathrm{d}y)  - 4f(x,y) }{\mathrm{d}x^2 }  
+\end{align*}
+因为根据泰勒展开我们有
+\begin{align*}
+f(x+\mathrm{d}x ,y) &=  f(x,y) + f'(x,y)\mathrm{d}x + \frac{f''(x,y) \mathrm{d}x^2}{2}  +\ldots\\
+f(x-\mathrm{d}x ,y) &=  f(x,y) - f'(x,y)\mathrm{d}x + \frac{f''(x,y) \mathrm{d}x^2}{2}  +\ldots
+\end{align*}	
+两者相加即可得到
+\end{thm}
+
+\begin{thm}[$ f(\vec r) = \frac{\vec r}{r^3}$的梯度的散度 ]
+		对于函数  $f(\vec r) = \frac{\vec r}{r^2}$我们有
+		\begin{align*}
+				\nabla^2 f(\vec r) &=  4\pi \delta (\vec r)  
+		\end{align*}
+		考虑在$ (0,0) $点，显然函数是未定义的。
+		但我们可以从积分的层面去描绘未定义的值。
+		\begin{align*}
+			r \to  0 \\	
+			\oiint_s \vec f \mathrm{d}   \vec a  &= \iiint_V \nabla \cdot f \mathrm{d} v   
+		\end{align*}
+		于是我们对于原点有有 
+		\begin{align*}
+			\int_{0}^{ 2\pi } \int_{0}^{ \pi } r^2\sin phi\mathrm{d}  \phi \mathrm{d}  \theta&=   4\pi 
+		\end{align*}
+		于是
+		\begin{align*}
+							\nabla ^2 f &=  4\pi \delta (\vec r)
+		\end{align*}
+		
+\end{thm}
+
+\begin{thm}[乘积的Operand操作数的变化对结果的影响]
+		考虑 $ f(m,n)= m*n $ 在这个函数中若m和n同时改变得
+\end{thm}
+
+\begin{thm}[向量乘积的微分法则]
+		\begin{align*}
+				\nabla \cdot (f*\vec A) &=\nabla f\cdot \vec A+f\nabla \cdot \vec A
+		\end{align*}
+
+		而在图形学中应用拉普拉斯方程通常有
+		\begin{align*}
+				\nabla \cdot (\omega \nabla u) &= \nabla \omega \cdot \nabla u + \omega\nabla \cdot  \nabla u     
+		\end{align*}
+\end{thm}
+\begin{thm}[计算万有引力势能]
+	\begin{align*}
+			f(x) &=  \nabla \Phi \\
+			f(x) &=  -\sum_{j=1,j\neq i}^{N}\frac{ \nabla x_i (\rho_j v_j) }{4\pi \|x_i -x_j\|_2} \\
+			f_i &= - \sum_{j=1,j\neq i}^{N} \frac{\rho_j v_j(x_i-x_j)}{4\pi \|x_i-x_j\|_2^3}  
+	\end{align*}	
+\end{thm}
+\begin{thm}[伯努利不等式(体积>=边长之和-维数+1]
+	\begin{align*}
+			x_1 x_2\ldots x_{n} \ge x_1+x_2+\ldots+x_{n} - n+1 \\
+			(x_1+1)(x_2+1)+\ldots+(x_{n}+1) \ge x_1+x_2+\ldots+x_{n} +1
+	\end{align*}	
+	想象一个n维空间中边长为1的正方体，如果另一个长方体完全覆盖正方体或者被这个正方体包裹，那么他的边长就满足
+	体积\ge 边长之和-维数+1
+\end{thm}
+\begin{thm}[n维空间中边长递增的长方体，它的体积
+		小于其平均边长的n北]
+		一个较弱的推论是当边长从1开始且以1为增量
+	\begin{align*}
+			n!<(\frac{n+1}{2} )^n 
+	\end{align*}	
+	这揭示了指数和阶乘之间的不等式关系,
+	我们直接证明对于任何起始边长和增量都满足这个条件，即证
+	\begin{align*}
+		k(k+c)\ldots(k+nc)\ge (\frac{2k+nc}{2})^n
+	\end{align*}
+	移项后只需证明
+	\begin{align*}
+			1\le \frac{2k+nc }{4(k+i)(k+nc-i)} 
+	\end{align*}
+	利用基本不等式可得
+	\begin{align*}
+			1\le \frac{\left( a+b \right) ^2}{4ab} 
+	\end{align*}
+	得证
+\end{thm}
+
+
+%  ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ 正文部分
+\ifx\allfiles\undefined
+\end{document}
+\fi

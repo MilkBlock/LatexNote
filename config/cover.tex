@@ -1,0 +1,30 @@
+\title{{\Huge{\textbf{标题：一个 \LaTeX 的数学笔记模板}}} \\ ———副标题：格物致知，慎思明辨}
+\author{作者：到底}
+\date{\today}
+\maketitle                   % 在单独的标题页上生成一个标题
+
+\thispagestyle{empty}        % 前言页面不使用页码
+\begin{center}
+\Huge\textbf{前言}
+\end{center}
+
+if people do not believe that mathematics is simple, 
+it is only because they do not realize how complicated life is. ——John von Neumann
+
+\begin{flushright}
+\begin{tabular}{c}
+\today \\ 格物致知，慎思明辨
+\end{tabular}
+\end{flushright}
+
+\newpage                      % 新的一页
+\pagestyle{plain}             % 设置页眉和页脚的排版方式（plain：页眉是空的，页脚只包含一个居中的页码）
+\setcounter{page}{1}          % 重新定义页码从第一页开始
+\pagenumbering{Roman}         % 使用大写的罗马数字作为页码
+\tableofcontents              % 生成目录
+
+\newpage                      % 以下是正文
+\pagestyle{plain}
+\setcounter{page}{1}          % 使用阿拉伯数字作为页码
+\pagenumbering{arabic}
+% \setcounter{chapter}{-1}    % 设置 -1 可作为第零章绪论从第零章开始
