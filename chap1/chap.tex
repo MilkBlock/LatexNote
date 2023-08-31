@@ -91,10 +91,72 @@ f(x-\mathrm{d}x ,y) &=  f(x,y) - f'(x,y)\mathrm{d}x + \frac{f''(x,y) \mathrm{d}x
 	\begin{align*}
 			1\le \frac{\left( a+b \right) ^2}{4ab} 
 	\end{align*}
+	% $\phi  \Phi \varphi \psi \Psi$
 	得证
+
 \end{thm}
+\begin{thm}[分式线性函数]
+形如
+\begin{align}
+		\frac{ax+b}{cx+d} 
+\end{align}
+称之为分式线性函数
+\par 求其反函数相当于是把它的四项系数重新排列
+\begin{align}
+	-	\frac{by-d}{cy-a} 
+\end{align}
+\end{thm}
+\begin{thm}[求$ 2x-\left\lfloor x \right\rfloor  $的反函数]
+\end{thm}
+\begin{thm}[求$x$左边最近的奇数]
+首先做出图像，观察到是对$ \left\lfloor x \right\rfloor $ 的$x$轴和$ y $ 轴同时应用拉伸
+因此可得
+\begin{align*}
+		f(x) = 2\left\lfloor \frac{x+1}{2}  \right\rfloor -1
+\end{align*}
+\end{thm}
+\begin{thm}[取整函数分析]
+	考虑如下代码	
+	\begin{lstlisting}
+	base =(x[p]*inv_dx - 0.5).cast(int)
+	fx = x[p] * inv_dx - base.cast(float)
+	\end{lstlisting}
+	在这里不便于利用函数的偏移分析，应该直接质问取整函数与x的差 
+	w\begin{align*}
+			\epsilon  &= x- \left\lfloor x-0.5\right\rfloor \\
+			\epsilon &\in \left( 0.5,1.5 \right) 
+	\end{align*}	
+\end{thm}
+\begin{thm}[B-Spline Kernels核函数]
+		定义
+		\begin{align*}
+				P\left( u \right) =\sum_{i=0}^{n} P_iB_{i,k}(u) 
+				u \in \left[ u_{k-1},u_{n+1} \right] 
+		\end{align*}
+		B-spline基函数求出算法应用最广泛的是deBoor-cox递推算法:
+		\begin{align*}
+				B_{i,k}\left( u \right) &=\frac{u-u_i}{u_{i+k-1}-u_i} *B_{i,k-1}u+\frac{u_{i+k-u}}{u_{i+k}-u_{i+1}} \\
+				B_{i,1}\left( u \right) &=\left\{\begin{aligned}
+								1  && u_i<u<u_{i+1}\\
+	0 && Otherwise
+				\end{aligned}\right.
+		\end{align*}
+    
+\end{thm}
+\begin{thm}[Bezier curve]
 
-
+\end{thm}
+\begin{thm}[How Euler compute $ \sum_{n=1}^{\infty} \frac{1}{n^2}   $]
+\begin{align*}
+		\sin x &= x- \frac{x^3}{3!} + \frac{x^5}{5!} -\ldots \\
+		\frac{\sin x}{x} &= 1- \frac{x^2}{3!} + \frac{x^4}{5!} -\ldots \\
+						 &= A[(x+\pi )(x-\pi ][(x+2\pi )(x-2\pi )]\ldots\\
+		1&= A(-\pi ^2)(-4\pi ^2)(-9\pi ^2)\ldots   &&\text{代入} x=0
+\end{align*}
+\end{thm}
+\begin{thm}[代数基本定理]
+		代数学基本定理：任何复系数一元n次多项式 方程在复数域上至少有一根(n≥1)，由此推出，n次复系数多项式方程在复数域内有且只有n个根（重根按重数计算）。代数基本定理在代数乃至整个数学中起着基础作用。 据说，关于代数学基本定理的证明，现有200多种证法。
+\end{thm}
 %  ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ 正文部分
 \ifx\allfiles\undefined
 \end{document}
