@@ -1,8 +1,8 @@
 \ifx\allfiles\undefined
 \input{../config/config}
 \begin{document}
-\chapter{2023暑假图形学与数学笔记}
-\section{}
+\chapter{}
+\section{2023暑假图形学与数学笔记}
 % \input{../config/cover} % 单独编译时，其实不用编译封面目录之类的，如需要不注释这句即可
 \else
 \fi
@@ -135,12 +135,14 @@ f(x-\mathrm{d}x ,y) &=  f(x,y) - f'(x,y)\mathrm{d}x + \frac{f''(x,y) \mathrm{d}x
 		\end{align*}
 		B-spline基函数求出算法应用最广泛的是deBoor-cox递推算法:
 		\begin{align*}
-				B_{i,k}\left( u \right) &=\frac{u-u_i}{u_{i+k-1}-u_i} *B_{i,k-1}u+\frac{u_{i+k-u}}{u_{i+k}-u_{i+1}} \\
+				B_{i,k}\left( u \right) &=\frac{u-u_i}{u_{i+k-1}-u_i} \cdot B_{i,k-1}u+\frac{u_{i+k-u}}{u_{i+k}-u_{i+1}} \\
 				B_{i,1}\left( u \right) &=\left\{\begin{aligned}
 								1  && u_i<u<u_{i+1}\\
 	0 && Otherwise
 				\end{aligned}\right.
 		\end{align*}
+		基函数的个数等于段数减去阶数，所有基函数之和
+		为1的段数为总段数减去二倍阶数
 \end{thm}
 \begin{thm}[Bezier curve]
 \end{thm}
@@ -175,7 +177,58 @@ f(x-\mathrm{d}x ,y) &=  f(x,y) - f'(x,y)\mathrm{d}x + \frac{f''(x,y) \mathrm{d}x
 		M = J \alpha \\
 		\vec r\times \vec F\\
 \end{align*}
+\end{thm}
+\begin{thm}[和差化积 积化和差]
+\begin{align*}
+		\sin  \alpha+\sin \beta = 2\sin \left( \frac{\alpha+\beta}{2}  \right) \cos \left( \frac{\alpha-\beta}{2}  \right) \\
+		\sin  \alpha-\sin \beta = -2\cos \left( \frac{\alpha+\beta}{2}  \right) \sin \left( \frac{\alpha-\beta}{2}  \right) \\
+		\cos  \alpha+\cos \beta = 2\cos \left( \frac{\alpha+\beta}{2}  \right) \cos \left( \frac{\alpha-\beta}{2}  \right) \\
+		\cos  \alpha-\cos \beta = 2\cos \left( \frac{\alpha+\beta}{2}  \right) \sin \left( \frac{\alpha-\beta}{2}  \right) 
+\end{align*}
+只需考虑如下等式
+\begin{align*}
+		e^{i\alpha}+e^{i\beta}&=e^{i\frac{ \alpha+\beta }{2} }\left( e^{i\frac{\alpha-\beta}{2}} + e^{-i \frac{\alpha-\beta}{2} }\right) 	\\
+							  &= e^{i\frac{\alpha+\beta}{2}} \cdot 2\cos \frac{\alpha-\beta}{2} \\
+		e^{i\alpha}-e^{i\beta}&=e^{i\frac{ \alpha+\beta }{2} }\left( e^{i\frac{\alpha-\beta}{2}} - e^{-i \frac{\alpha-\beta}{2} }\right) 	\\
+							  &= e^{i\frac{\alpha+\beta}{2}} \cdot 2\sin \frac{\alpha-\beta}{2} 
+\end{align*}
+\end{thm}
+\begin{thm}[给定三个向量形成三维图形的体积]
+		\begin{align*}
+				\mathrm{d}V = \mathrm{d}L_1e_1\cdot (\mathrm{d}L_2e_2\times \mathrm{d}L_3e_3)  
+		\end{align*}
+\end{thm}
+\begin{thm}[极分解]
+常用于力学中，将应力分解为旋转分量与伸缩分量
+\begin{align*}
+		A &= U \Sigma V^T = UV^TV\Sigma V^T = (UV^T)(V\Sigma V^T) = QS\\
+		Q &= UV^T  &&\text{旋转} \\
+		S &= V\Sigma V^T &&\text{伸缩} 
+\end{align*}
+\end{thm}
 
+\begin{thm}[代数基本定理的证明]
+		\begin{align*}
+				G_{m-1}&= \frac{z^m - c^m}{z-c} \\
+					   &=c^{m-1}+c^{m-2}z+\ldots+cz^{m-2}+z^{m-1}  \\
+				P_n(z) &= z^n + Az^{n-1} + \ldots+Dz + E\\
+				P_n(z) - P_n(c) &= (z-c)(G_{n-1}+AG_{n-2}+\ldots+D)
+		\end{align*}
+\end{thm}
+\begin{thm}[Neo-Hookean superelasiticity model]
+		\begin{align*}
+		\Psi(F) = \frac{\mu}{2} (tr(F^TF)-d)  - \mu log(J) + \frac{\lambda}{2}  log^2(J)
+		\end{align*}
+		势能函数是与应变之间的公式，其中d表示dimensions of space to simulate in 
+\begin{align*}
+		\mu  = \frac{E}{2(1+\nu )} , \lambda = \frac{E\nu }{(1+\nu )(1-2\nu )} 
+\end{align*}
+\end{thm}
+\section{大二第一学期笔记}
+\begin{thm}[矩阵内积以表示矩阵微分]
+		\begin{align*}
+				\mathrm{d}f = \sum_{i=1}^{m} \sum_{j=1}^{n} \frac{\partial f}{\partial X_{ij}} \mathrm{d}X_{ij}=tr(\frac{\partial f}{\partial X} ^T \mathrm{d}X)
+		\end{align*}
 \end{thm}
 %  ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ 正文部分
 \ifx\allfiles\undefined
