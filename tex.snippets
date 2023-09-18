@@ -651,6 +651,10 @@ snippet dint "integral" wA
 \int_{ ${1:-\infty}}^{${2:\infty}} ${3:${VISUAL}} $0
 endsnippet
 
+snippet oint "contour integral" wA
+\oint $0
+endsnippet
+
 priority 200
 context "math()"
 snippet '(?<!\\)(arcsin|arccos|arctan|arccot|arccsc|arcsec|pi|zeta|mu|nu)' "ln" rwA
@@ -723,7 +727,7 @@ snippet neg "neg" i
 endsnippet
 
 context "math()"
-snippet Gam "gamm" i
+snippet Gam "gamm" iA
 \Gamma
 endsnippet
 
