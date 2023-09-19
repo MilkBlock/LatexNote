@@ -1,8 +1,8 @@
 \ifx\allfiles\undefined
 \input{../config/config}
 \begin{document}
-\chapter{2023暑假图形学与数学笔记}
-\section{}
+\chapter{}
+\section{2023暑假图形学与数学笔记}
 % \input{../config/cover} % 单独编译时，其实不用编译封面目录之类的，如需要不注释这句即可
 \else
 \fi
@@ -135,12 +135,14 @@ f(x-\mathrm{d}x ,y) &=  f(x,y) - f'(x,y)\mathrm{d}x + \frac{f''(x,y) \mathrm{d}x
 		\end{align*}
 		B-spline基函数求出算法应用最广泛的是deBoor-cox递推算法:
 		\begin{align*}
-				B_{i,k}\left( u \right) &=\frac{u-u_i}{u_{i+k-1}-u_i} *B_{i,k-1}u+\frac{u_{i+k-u}}{u_{i+k}-u_{i+1}} \\
+				B_{i,k}\left( u \right) &=\frac{u-u_i}{u_{i+k-1}-u_i} \cdot B_{i,k-1}u+\frac{u_{i+k-u}}{u_{i+k}-u_{i+1}} \\
 				B_{i,1}\left( u \right) &=\left\{\begin{aligned}
 								1  && u_i<u<u_{i+1}\\
 	0 && Otherwise
 				\end{aligned}\right.
 		\end{align*}
+		基函数的个数等于段数减去阶数，所有基函数之和
+		为1的段数为总段数减去二倍阶数
 \end{thm}
 \begin{thm}[Bezier curve]
 \end{thm}
@@ -195,7 +197,92 @@ f(x-\mathrm{d}x ,y) &=  f(x,y) - f'(x,y)\mathrm{d}x + \frac{f''(x,y) \mathrm{d}x
 
 	古典概型
 	在样本空间中的样本点每个概率均匀相等出现
+\end{thm}
+\begin{thm}[和差化积 积化和差]
+\begin{align*}
+		\sin  \alpha+\sin \beta = 2\sin \left( \frac{\alpha+\beta}{2}  \right) \cos \left( \frac{\alpha-\beta}{2}  \right) \\
+		\sin  \alpha-\sin \beta = 2\cos \left( \frac{\alpha+\beta}{2}  \right) \sin \left( \frac{\alpha-\beta}{2}  \right) \\
+		\cos  \alpha+\cos \beta = 2\cos \left( \frac{\alpha+\beta}{2}  \right) \cos \left( \frac{\alpha-\beta}{2}  \right) \\
+		\cos  \alpha-\cos \beta =- 2\sin \left( \frac{\alpha+\beta}{2}  \right) \sin \left( \frac{\alpha-\beta}{2}  \right) 
+\end{align*}
+只需考虑如下等式
+\begin{align*}
+		e^{i\alpha}+e^{i\beta}&=e^{i\frac{ \alpha+\beta }{2} }\left( e^{i\frac{\alpha-\beta}{2}} + e^{-i \frac{\alpha-\beta}{2} }\right) 	\\
+							  &= e^{i\frac{\alpha+\beta}{2}} \cdot 2\cos \frac{\alpha-\beta}{2} \\
+		e^{i\alpha}-e^{i\beta}&=e^{i\frac{ \alpha+\beta }{2} }\left( e^{i\frac{\alpha-\beta}{2}} - e^{-i \frac{\alpha-\beta}{2} }\right) 	\\
+							  &= e^{i\frac{\alpha+\beta}{2}} \cdot 2i\sin \frac{\alpha-\beta}{2} 
+\end{align*}
+\end{thm}
+\begin{thm}[给定三个向量形成三维图形的体积]
+		\begin{align*}
+				\mathrm{d}V = \mathrm{d}L_1e_1\cdot (\mathrm{d}L_2e_2\times \mathrm{d}L_3e_3)  
+		\end{align*}
+\end{thm}
+\begin{thm}[极分解]
+常用于力学中，将应力分解为旋转分量与伸缩分量
+\begin{align*}
+		A &= U \Sigma V^T = UV^TV\Sigma V^T = (UV^T)(V\Sigma V^T) = QS\\
+		Q &= UV^T  &&\text{旋转} \\
+		S &= V\Sigma V^T &&\text{伸缩} 
+\end{align*}
+\end{thm}
 
+\begin{thm}[代数基本定理的证明]
+		\begin{align*}
+				G_{m-1}&= \frac{z^m - c^m}{z-c} \\
+					   &=c^{m-1}+c^{m-2}z+\ldots+cz^{m-2}+z^{m-1}  \\
+				P_n(z) &= z^n + Az^{n-1} + \ldots+Dz + E\\
+				P_n(z) - P_n(c) &= (z-c)(G_{n-1}+AG_{n-2}+\ldots+D)
+		\end{align*}
+\end{thm}
+\begin{thm}[Neo-Hookean superelasiticity model]
+		\begin{align*}
+		\Psi(F) = \frac{\mu}{2} (tr(F^TF)-d)  - \mu log(J) + \frac{\lambda}{2}  log^2(J)
+		\end{align*}
+		势能函数是与应变之间的公式，其中d表示dimensions of space to simulate in 
+\begin{align*}
+		\mu  = \frac{E}{2(1+\nu )} , \lambda = \frac{E\nu }{(1+\nu )(1-2\nu )} 
+\end{align*}
+\end{thm}
+\section{2023大二第一学期笔记}
+\begin{thm}[矩阵内积以表示矩阵微分]
+		\begin{align*}
+				\mathrm{d}f = \sum_{i=1}^{m} \sum_{j=1}^{n} \frac{\partial f}{\partial X_{ij}} \mathrm{d}X_{ij}=tr(\frac{\partial f}{\partial X} ^T \mathrm{d}X)
+		\end{align*}
+\end{thm}
+
+\begin{thm}[Euler formula of Points  Edges  Regions]
+考虑在一个平面内的$ V $ 个点，在拥有这些点的闭合图中一定存在一个由图中的边组成多边形可以
+将所有的点囊括，并且使得剩下的边不相交，显然
+\begin{align*}
+		\text{剩下的边数}&= E-V 
+\end{align*}
+首先我们只考虑多边形我们发现这个平面被划分成了两个区域:里和外.
+由于剩下$ E-V $条不相交的边把这个图形进行了切分，我们可以知道
+ \begin{align*}
+		R-(E-V) = 2
+\end{align*}
+\end{thm}
+\begin{thm}[Jacobian Determinant]
+		\begin{align*}
+				\frac{\partial (u_1,u_2,\ldots,u_n)}{\partial (x_1,x_2,\ldots,x_{n})} 
+		\end{align*}
+\end{thm}
+\begin{thm}[Gamma Function]
+		\begin{align*}
+				\Gamma (z) &= \lim_{ n \to \infty} \frac{1 \cdot 2 \ldots n}{z(z+1)\ldots(z+n)}n^z \\
+				&= \int_{ 0}^{\infty} x^{z-1} \cdot  e^{- x}\mathrm{d}x  
+		\end{align*}
+\end{thm}
+\begin{thm}[Cauchy Integral Formula]
+\begin{align*}
+	f(z_0) = \frac{1}{2\pi i}  \oint \frac{f(z)}{z-z_0}  \mathrm{d}z
+\end{align*}
+\end{thm}
+\begin{thm}[Laurent series ]
+\begin{align*}
+		f(z) = \ldots+ \frac{c_{-2}}{(z-a)^2}  + \frac{c_{-1}}{z-a} + c_0 + c_1(z-a) + c_2(z-a)^2+\ldots
+\end{align*}
 \end{thm}
 \begin{thm}
 		[高斯分布与二项分布]
@@ -215,6 +302,17 @@ f(x-\mathrm{d}x ,y) &=  f(x,y) - f'(x,y)\mathrm{d}x + \frac{f''(x,y) \mathrm{d}x
 		\begin{align*}
 				Attention(Q,K,V) = softmax (\frac{QK^T}{\sqrt{d_k} } V
 		.\end{align*}
+\end{thm}
+\begin{thm}[关于积分的菜谱]
+		\begin{enumerate}
+				\item Fourier 正弦展开
+				\item 交换积分词语
+				\item 构造韩餐变量函数
+				\item laplace 变换
+				\item 狄拉克函数
+				\item 留数定理
+				\item 黎曼引理
+		\end{enumerate}
 \end{thm}
 
 
