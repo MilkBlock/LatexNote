@@ -175,8 +175,49 @@ f(x-\mathrm{d}x ,y) &=  f(x,y) - f'(x,y)\mathrm{d}x + \frac{f''(x,y) \mathrm{d}x
 		M = J \alpha \\
 		\vec r\times \vec F\\
 \end{align*}
+\end{thm}
+\begin{thm}[快速傅里叶变换]
+	\begin{align*}
+			\int_{-\infty}^{\infty}  g(t)\cdot  e^{-2\pi i ft } \mathrm{d}t  
+			X_k = \sum_{n=0}^{N-1} x_nW_N^kn  && \text{其基础周期为1}W_n = e^{-\frac{2\pi}{N} }
+	.\end{align*}
+	频率到时域的转换就是把各个响应的频率相加，所以在逆变换的时候要遍历所有的频率
+	频率数等于时域点数
+	每个e的指数的范围一定是2pi的整数倍，这样保证对齐
+	傅里叶变换和你傅里叶变换的指数符号不同 
+\end{thm}
+\begin{thm}
+		用频率确定概率
+		事件A-> P(a)
+
+概率和频率之间的关系，其中频率会再样本数目增长的时候趋近于概率\\
+	高尔顿板子galton board ，应该满足二项式分布
+
+	古典概型
+	在样本空间中的样本点每个概率均匀相等出现
 
 \end{thm}
+\begin{thm}
+		[高斯分布与二项分布]
+		Gaussian distribution 和 binomial distribution 的概率密度函数相同
+\end{thm}
+\begin{thm}
+		[概率与几何概率]
+		如果存在两个及以上的随机变量，那么可以用多个维度的体积来表示概率
+\end{thm}
+\begin{thm}[Morgan's law]
+\begin{align*}
+		\bigcap_{i \in  I} \overline{A_i}  = \overline{\bigcup_{i \in  I} A_i}
+.\end{align*}
+\end{thm}
+\begin{thm}
+		[scaled dot-product attention]
+		\begin{align*}
+				Attention(Q,K,V) = softmax (\frac{QK^T}{\sqrt{d_k} } V
+		.\end{align*}
+\end{thm}
+
+
 %  ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ 正文部分
 \ifx\allfiles\undefined
 \end{document}
