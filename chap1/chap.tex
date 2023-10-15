@@ -314,7 +314,27 @@ f(x-\mathrm{d}x ,y) &=  f(x,y) - f'(x,y)\mathrm{d}x + \frac{f''(x,y) \mathrm{d}x
 				\item 黎曼引理
 		\end{enumerate}
 \end{thm}
+\begin{thm}[贝叶斯公式 bayes formula]
+\begin{align*}
+		\frac{P(B_i)P(A | B_i)}{\sum_{j=1}^{n} P(B_j) P(A|B_j} 
+\end{align*}
+考虑这个公式，一般而言结果和起因各是一种划分，
+而划分可以同时存在，因此，贝叶斯公式又称之为后验概率
+或逆概率，一般而言是让我们在结果划分的一个部分求各种原因的概率
+\end{thm}
+\begin{thm}[Laplace Transformation  拉普拉斯变换]
+傅里叶变换是拉普拉斯变换的一个特例，拉普拉斯变换可以认为是对傅里叶变换在复数域上的拓展
+。
+首先考虑傅里叶变换的缺点，它要求函数绝对可积，并且要求函数在不能向无限拓展。
+考虑用 $ e^{t} $ 将函数压下去
 
+\begin{align*}
+		\mathscr{L}[e^{at}] = \frac{1}{s-a} \\
+		\mathscr{L}[\sin  at] = \frac{a}{s^2+a^2} \\
+		\mathscr{L}[\cos at ]  = \frac{s}{s^2+a^2} 
+		\mathscr{L}[e^{at}\sin bt =  \frac{b}{(s-a)^2 + b^2}  
+\end{align*}
+\end{thm}
 
 %  ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ 正文部分
 \ifx\allfiles\undefined
